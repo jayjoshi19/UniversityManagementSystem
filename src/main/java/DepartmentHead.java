@@ -13,5 +13,6 @@ public class DepartmentHead extends Professor{
         System.out.println("Employee ID : " + employeeId);
         System.out.println("Department : " + department);
         System.out.println("Salary : " + salary);
-        System.out.println("Office Room : " + officeRoom);    }
+        System.out.println("Office Room : " + officeRoom);
+    }
 }
