@@ -8,25 +8,19 @@
 
  */
 public class Main {
-
     public static void main(String[] args) {
 
-        University.setUniversityName("Global Tech University");
+        UniversityService service = new UniversityService();
 
-        Person[] persons = new Person[5];
-        persons[0] = new Student("Alice Smith", 20, "S1234", "Computer Science", 3.9);
-        persons[1] = new Student("Jay Joshi", 30, "S1121", "Data Analysis", 3.6);
-        persons[2] = new Professor("Dr. John Doe", 45, "P4451", "Software Engineering", 95000);
-        persons[3] = new Professor("Dr. Samir Chauhan", 39, "P1290", "Computer Engineering", 112000);
-        persons[4] = new DepartmentHead("Dr. Sarah Lee", 57, "P9918", "Computer Science", 145000, "A-105");
+        //University.setUniversityName("Global Tech University");
+        System.out.println();
+        //System.out.println("University Name : "+University.getUniversityName());
+        System.out.println("University Name : Global Tech University");
+        System.out.println();
 
-        for (Person p : persons) {
-            p.displayInfo();
-            System.out.println();
-        }
+        service.showUniversityDetails();
 
-        System.out.println("--- University Statistics ---");
-        System.out.println("Total Students : " + University.totalStudents);
-        System.out.println("Total Professors : " + University.totalProfessors);
+        University.getStatistics();
+
     }
 }

@@ -15,7 +15,7 @@ public class Person {
     }
 
     // a final method getType() that returns "Person"
-    public final String getType(){
-        return "Person";
+    public final Class getType(){
+        return getClass();
     }
 }
